@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="slide-down">Slide Down</button>
+    <button id="slide-up">Slide Up</button>
+    <button id="toggle-sliding">Toggle Sliding</button>
+    <img src="image/plant.jpg" alt="hopper">
+    <script src="jquery.js"></script>
+    <script>
+    $('#slide-down').click(function(){
+        $('img').slideDown('fast');
+    });
+    $('#slide-up').click(function(){
+        $('img').slideUp(400);
+    });
+    $('#toggle-sliding').click(function(){
+        $('img').slideToggle('slow');
+    });
+    </script>
+</body>
+</html>

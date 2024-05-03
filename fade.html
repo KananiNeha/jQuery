@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fade-In">Fade In</button>
+    <button id="fade-Out">Fade out</button>
+    <button id="toggle-fading">Toggle Fading</button>
+    <img src="image/plant.jpg" alt="hopper">
+    <script src="jquery.js"></script>
+    <script>
+        $('#fade-In').click(function(){
+            $('img').fadeIn('fast');
+        });
+        $('#fade-Out').click(function(){
+            $('img').fadeOut(400);
+        });
+        $('#toggle-fading').click(function(){
+            $('img').fadeToggle('slow');
+        });
+    </script>
+</body>
+</html>

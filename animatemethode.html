@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({left:'250px'});
+                $("div").animate({top:'250px'});
+                $("div").animate({left:'0px'});
+                $("div").animate({top:'0px'});
+            });
+        });
+        
+    </script>
+<body>
+    <button>Start Animation</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore explicabo amet placeat impedit. Illo quos impedit beatae debitis iste.</p>
+    <div style="background: pink;height: 200px;width: 200px;position: relative;"></div>
+</body>
+</html>
